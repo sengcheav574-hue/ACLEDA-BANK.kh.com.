@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+
+}
+main > .banner{
+    width: 100%;
+    background-color: #1b2232;
+    box-shadow: 0px 0px 10px black;
+}
+main > .banner > .banner-img{
+    width: 100%;
+    height: 410px;
+    background-image: url("../asset/images/banner-bnpl.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: scrollBanner 20s linear infinite;
+}
+@keyframes scrollBanner {
+    0%{
+        background-image: url("../asset/images/banner-cross-border-japan-eng.jpg");
+        
+    }
+    25%{
+        background-image: url("../asset/images/banner-bnpl.jpg");
+
+    }
+    50%{
+        background-image: url("../asset/images/banner-advance-salary.jpg");
+
+    }
+    75%{
+        background-image: url("../asset/images/banner-salary-loan.jpg");
+
+    }
+    100%{
+        background-image: url("../asset/images/banner-cross-border-japan-eng.jpg");
+
+    }
+}
