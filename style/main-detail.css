@@ -9,6 +9,7 @@ main > .main-detail{
     padding: 0px 185px;
     background-color: #091521;
     box-shadow: 0px 0px 10px black;
+
 }
 main > .main-detail > .main-icon{
     width: 100%;
@@ -25,6 +26,7 @@ main > .main-detail > .main-icon > .box-icon{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
     /* background-color: blue; */
 }
 main > .main-detail > .main-icon > .box-icon > .box-img{
@@ -34,12 +36,13 @@ main > .main-detail > .main-icon > .box-icon > .box-img{
     cursor: pointer;
     border: 1.5px solid#777;
     padding: 13px;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 
 }
 main > .main-detail > .main-icon > .box-icon:hover > .box-img{
     border:2px solid aliceblue;
     transition: all .5s ease-in-out;
+    transform: scale(1.1);
 }
 main > .main-detail > .main-icon > .box-icon > .box-img > img {
     width: 35px;

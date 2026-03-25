@@ -29,21 +29,27 @@ main > .main-card-title > .title > p{
 main > .main-card-title > .main-card {
     display: flex;
     gap: 20px;
+    overflow-x: auto;
     width: 100%;
     padding: 50px 0px;
 
 }
 main > .main-card-title> .main-card > .card  {
     width: 310px;
+    flex: 0 0 auto;
     height: 350px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     background-color: #1b2232;
 }
+main > .main-card-title> .main-card > .card:hover{
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
 main > .main-card-title> .main-card > .card > .card-header {
     width: 100%;
-    height: 60%;
+    height: 65%;
 
 }
 main > .main-card-title> .main-card > .card > .card-header > img{
@@ -52,7 +58,7 @@ main > .main-card-title> .main-card > .card > .card-header > img{
 }
 main > .main-card-title> .main-card > .card > .card-body {
     width: 100%;
-    height: 40%;
+    height: 35%;
     padding: 20px;
 }
 main > .main-card-title> .main-card > .card > .card-body > a{
@@ -68,26 +74,36 @@ main > .main-card-title> .main-card > .card > .card-body:hover > a{
 }
 main >.main-card-title > .main-img  {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     justify-content: space-between;
     padding: 40px 0px;
     
 }
 
 main >.main-card-title > .main-img > .img > img{
-    width: 500px;
+    width: 550px;
     border-radius: 10px;
+}
+main >.main-card-title > .main-img > .img:hover > img{
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
 }
 main >.main-card-title > .main-img > .img > a{
     display: flex;
     justify-content: center;
-    color: aliceblue;
+    color: rgb(82, 131, 174);
     align-items: center;
     font-size: 17px;
     font-weight: bolder;
     padding-top: 20px;
     text-decoration: none;
 }
-main >.main-card-title > .main-img > .img:hover > a{
+main >.main-card-title > .main-img > .img > a > i{
+    padding-left: 10px;
+    text-decoration: none;
+}
+main >.main-card-title > .main-img > .img:hover > a,
+main >.main-card-title > .main-img > .img:hover > a > i{
     text-decoration: underline;
+    color: aliceblue;
 }
