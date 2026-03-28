@@ -49,6 +49,17 @@ main > .main-buttom > .main-title> .information-card > .main-card{
     padding: 20px;
     border-radius: 10px;
 }
+
+main > .main-buttom > .main-title> .information-card > .main-card > a {
+    color: rgb(73, 191, 255);
+    text-decoration: none;
+}
+
+main > .main-buttom > .main-title> .information-card > .main-card > a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
 main > .main-buttom > .main-title> .information-card > .main-card1 > .img-card1 > img{
     width: 350px;
     border-radius: 10px;
@@ -60,6 +71,7 @@ main > .main-buttom > .main-title> .information-card > .main-card > .img-card > 
     align-items: center;
     border-radius: 10px;
     margin: 10px;
+    transition: all .3s ease-in-out;
 
 }
 
@@ -76,8 +88,72 @@ main > .main-buttom > .main-title> .information-card > .main-card > hr{
 main > .main-buttom > .main-title> .information-card > .main-card > .card-title {
     color: aliceblue;
     font-size: 18px;
-    width: 300px;
+    width: 100%;
 }
 main > .main-buttom > .main-title> .information-card > .main-card > .card-title > .title{
     font-size: 14px;
+}
+
+main > .main-buttom > .main-title> .information-card > .main-card > .card-title > div {
+    padding: 10px;
+    background-color: #2b83ed;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-top: 25px;
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+main > .main-buttom > .main-title> .information-card > .main-card > .card-title > div:hover{
+    text-decoration: underline;
+    transform: scale(1.03);
+    transition: all .3s ease-in-out;
+}
+
+main > .main-buttom > .main-title> .information-card > .main-card > .img_icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+main > .main-buttom > .main-title> .information-card > .main-card > .img_icon > img{
+    width: 90px;
+    padding-bottom: 10px;
+    transition: all .3s ease-in-out;
+
+}
+
+main > .main-buttom > .main-title> .information-card > .main-card > .img_icon > img:hover{
+    cursor: pointer;
+    transform: scale(1.06);
+    transition: all .3s ease-in-out;
+}
+
+main > .main-buttom > .main-title> .information-card > .main-card > .card-title > .title{
+    padding-top: 10px;
+}
+
+main > .main-buttom > .main-title > .description >ul > li {
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+main > .main-buttom > .main-title > .description >ul > li > a{
+    color: rgb(113, 172, 230);
+    text-decoration: none;
+}
+
+main > .main-buttom > .main-title > .description >ul > li > a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+main > .main-buttom > .main-title > .description > h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

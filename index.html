@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACLEDA Bank Cambodia.kh</title>
     <link rel="stylesheet" href="style/./header.css" />
+    <link rel="stylesheet" href="./style/search.css" />
 
     <!-- link Icon font awesom -->
     <link
@@ -30,6 +31,10 @@
     <link rel="stylesheet" href="./style/footer.css" />
   </head>
   <body>
+
+    <!-- Search Overlay (outside header, covers full page) -->
+    <div class="search-overlay" id="searchOverlay"></div>
+
     <!-- header -->
     <header>
       <!-- navbar-top -->
@@ -56,9 +61,18 @@
               <li><a href="">Informetion</a></li>
             </ul>
           </li>
-          <li>
-            <a href="">SEARCH</a>
-            <i class="fa-solid fa-magnifying-glass"></i>
+
+          <!-- SEARCH ITEM — input lives here -->
+          <li class="search-item">
+            <button class="search-btn" id="searchBtn" >Search</button>
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <!-- Search input anchored below this li -->
+            <input
+              type="text"
+              class="search-input"
+              id="searchInput"
+              placeholder="Search..."
+            />
           </li>
 
           <li>
@@ -74,6 +88,7 @@
           </li>
         </ul>
       </nav>
+
       <!-- navbar-bottom -->
       <nav class="nav-bottom">
         <ul class="menu-bottom">
@@ -91,7 +106,7 @@
           </li>
 
           <li>
-            <a href="">BUSINESS</a>
+            <a href="./business.html">BUSINESS</a>
             <i class="fa-solid fa-angle-down"></i>
             <ul class="dropdown">
               <li><a href="">Credits</a></li>
@@ -104,7 +119,7 @@
           </li>
 
           <li>
-            <a href="">CARDS</a>
+            <a href="./card.html">CARDS</a>
             <i class="fa-solid fa-angle-down"></i>
             <ul class="dropdown">
               <li><a href="">Consumer Card</a></li>
@@ -117,7 +132,7 @@
           </li>
 
           <li>
-            <a href="">DIGITAL</a>
+            <a href="./digital.html">DIGITAL</a>
             <i class="fa-solid fa-angle-down"></i>
             <ul class="dropdown">
               <li><a href="">ACLEDA mobile Super</a></li>
@@ -130,7 +145,7 @@
           </li>
 
           <li>
-            <a href="">INVESTOR RELATIONS</a>
+            <a href="./investor_Relationpage.html">INVESTOR RELATIONS</a>
           </li>
         </ul>
 
@@ -230,129 +245,71 @@
             <div class="card-header">
               <img src="./asset/images/img-ln20251008-2.jpg" alt="" />
             </div>
-
             <div class="card-body">
-              <a href="#">
-                The Official Subordinated Bond Listing Ceremony of ACLEDA BANK
-                PLC. on the Cambodia Securities Exchange ("CSX")</a
-              >
+              <a href="#">The Official Subordinated Bond Listing Ceremony of ACLEDA BANK PLC. on the Cambodia Securities Exchange ("CSX")</a>
             </div>
           </div>
           <div class="card">
             <div class="card-header">
               <img src="./asset/images/img-ln20251112-1.jpg" alt="" />
             </div>
-
             <div class="card-body">
-              <a href="#">
-                Business Matching with JCA (JAPAN-Cambodia Association)</a
-              >
+              <a href="#">Business Matching with JCA (JAPAN-Cambodia Association)</a>
             </div>
           </div>
           <div class="card">
             <div class="card-header">
               <img src="./asset/images/img-ln20251112-2-small.jpg" alt="" />
             </div>
-
             <div class="card-body">
-              <a href="#">
-                Official Launch of Cross-Border QR Code Payment between Cambodia
-                and Singapore</a
-              >
+              <a href="#">Official Launch of Cross-Border QR Code Payment between Cambodia and Singapore</a>
             </div>
           </div>
           <div class="card">
             <div class="card-header">
               <img src="./asset/images/img-ln20251204-small.jpg" alt="" />
             </div>
-
             <div class="card-body">
-              <a href="#">
-                NPCI International and ACLEDA Bank Plc. sign agreement to enable
-                UPI & KHQR Acceptance in India & Cambodia</a
-              >
+              <a href="#">NPCI International and ACLEDA Bank Plc. sign agreement to enable UPI & KHQR Acceptance in India & Cambodia</a>
             </div>
           </div>
         </div>
+
         <div class="main-card">
           <div class="card">
-            <div class="card-header">
-              <img src="./asset/images/maxima.jpg" alt="" />
-            </div>
-
-            <div class="card-body">
-              <a href="#"> Loan repayment of MAXIMA Microfinance Plc.</a>
-            </div>
+            <div class="card-header"><img src="./asset/images/maxima.jpg" alt="" /></div>
+            <div class="card-body"><a href="#">Loan repayment of MAXIMA Microfinance Plc.</a></div>
           </div>
           <div class="card">
-            <div class="card-header">
-              <img src="./asset/images/ming-hour.jpg" alt="" />
-            </div>
-
-            <div class="card-body">
-              <a href="#">Pay for tuition fee of Ming Hua Northwest school</a>
-            </div>
+            <div class="card-header"><img src="./asset/images/ming-hour.jpg" alt="" /></div>
+            <div class="card-body"><a href="#">Pay for tuition fee of Ming Hua Northwest school</a></div>
           </div>
           <div class="card">
-            <div class="card-header">
-              <img src="./asset/images/nea.jpg" alt="" />
-            </div>
-
-            <div class="card-body">
-              <a href="#"> កំពុងស្វែងរកការងារធ្វើ?</a>
-            </div>
+            <div class="card-header"><img src="./asset/images/nea.jpg" alt="" /></div>
+            <div class="card-body"><a href="#">កំពុងស្វែងរកការងារធ្វើ?</a></div>
           </div>
           <div class="card">
-            <div class="card-header">
-              <img src="./asset/images/nssf3.jpg" alt="" />
-            </div>
-
-            <div class="card-body">
-              <a href="#"> NSSF Contribution Payment</a>
-            </div>
+            <div class="card-header"><img src="./asset/images/nssf3.jpg" alt="" /></div>
+            <div class="card-body"><a href="#">NSSF Contribution Payment</a></div>
           </div>
         </div>
+
         <div class="main-card">
           <div class="card">
-            <div class="card-header">
-              <img src="./asset/images/Saly-VIP-bus.jpg" alt="" />
-            </div>
-
-            <div class="card-body">
-              <a href="#">
-                Pay for Saly VIP's bus tickets through ACLEDA Super App</a
-              >
-            </div>
+            <div class="card-header"><img src="./asset/images/Saly-VIP-bus.jpg" alt="" /></div>
+            <div class="card-body"><a href="#">Pay for Saly VIP's bus tickets through ACLEDA Super App</a></div>
           </div>
           <div class="card">
-            <div class="card-header">
-              <img src="./asset/images/T_O_group.jpg" alt="" />
-            </div>
-
-            <div class="card-body">
-              <a href="#">
-                Buy POS terminal for your business from T.O Group now and pay
-                later with 0% interest</a
-              >
-            </div>
+            <div class="card-header"><img src="./asset/images/T_O_group.jpg" alt="" /></div>
+            <div class="card-body"><a href="#">Buy POS terminal for your business from T.O Group now and pay later with 0% interest</a></div>
           </div>
           <div class="card">
-            <div class="card-header">
-              <img src="./asset/images/tvet.jpg" alt="" />
-            </div>
-
-            <div class="card-body">
-              <a href="#"> ស្វែងរកមេរៀនបច្ចេកទេស និងជំនាញផ្សេងៗ</a>
-            </div>
+            <div class="card-header"><img src="./asset/images/tvet.jpg" alt="" /></div>
+            <div class="card-body"><a href="#">ស្វែងរកមេរៀនបច្ចេកទេស និងជំនាញផ្សេងៗ</a></div>
           </div>
           <div class="card">
-            <div class="card-header">
-              <img src="./asset/images/img-cam-ie-3.jpg" alt="" />
-            </div>
-
-            <div class="card-body">
-              <a href="#"> How to register for Informal Economy (Cam-IE)</a>
-            </div>
+            <div class="card-header"><img src="./asset/images/img-cam-ie-3.jpg" alt="" /></div>
+            <div class="card-body"><a href="#">How to register for Informal Economy (Cam-IE)</a></div>
           </div>
         </div>
 
@@ -391,7 +348,6 @@
 
     <!-- footer -->
     <footer>
-      <!-- in for link -->
       <div class="main-link">
         <ul class="link-top">
           <li><a href="#">SITE MAP</a></li>
@@ -401,62 +357,37 @@
           <li><a href="#">NEWSLETTER</a></li>
           <li><a href="#">LEGAL AND PRIVACY NOTICE</a></li>
         </ul>
-
         <div class="link-bottom">
           <h4>ONLINE VISITOR: 1,417</h4>
           <h4>©2025 ACLEDA Bank Plc.</h4>
         </div>
       </div>
 
-      <!-- logo and title -->
       <div class="main-logo">
-        <!-- title -->
         <h4 class="title">ACLEDA Bank Plc. - Credentials</h4>
-        <!-- box logo -->
         <div class="main-box-logo">
-          <!-- box1 -->
-          <div class="box-logo">
-            <img src="./asset/images/PCIDSS.jpg" alt="" />
-          </div>
-          <!-- box2 -->
-          <div class="box-logo">
-            <img src="./asset/images/IRQS.jpg" alt="" />
-          </div>
-          <!-- box3 -->
-          <div class="box-logo">
-            <img src="./asset/images/IRQS-2.jpg" alt="" />
-          </div>
+          <div class="box-logo"><img src="./asset/images/PCIDSS.jpg" alt="" /></div>
+          <div class="box-logo"><img src="./asset/images/IRQS.jpg" alt="" /></div>
+          <div class="box-logo"><img src="./asset/images/IRQS-2.jpg" alt="" /></div>
         </div>
       </div>
 
-      <!-- medai -->
       <div class="main-medai">
-        <!-- title -->
         <h4 class="title">CONNECT WITH US ON</h4>
-
-        <!-- BOX LOGO -->
         <div class="main-box-medai">
-          <!-- box1 -->
           <a href="https://web.facebook.com/sengcheav123" class="box-medai" target="_blank">
-            <img
-              src="https://i.pinimg.com/736x/ab/96/4b/ab964bcf79cbc2d86b15a9e2efe05ffa.jpg"
-              alt=""
-            />
+            <img src="https://i.pinimg.com/736x/ab/96/4b/ab964bcf79cbc2d86b15a9e2efe05ffa.jpg" alt="" />
           </a>
           <a href="https://t.me/Stephenchow007" class="box-medai" target="_blank">
-            <img
-              src="https://i.pinimg.com/736x/07/08/c7/0708c7674479354031575cf4d4551c68.jpg"
-              alt=""
-            />
+            <img src="https://i.pinimg.com/736x/07/08/c7/0708c7674479354031575cf4d4551c68.jpg" alt="" />
           </a>
           <a href="https://www.tiktok.com/@fddddddddxxfhkn?_r=1" class="box-medai" target="_blank">
-            <img
-              src="https://i.pinimg.com/736x/4b/0a/24/4b0a2446b1e173de9ce96410dff44885.jpg"
-              alt=""
-            />
+            <img src="https://i.pinimg.com/736x/4b/0a/24/4b0a2446b1e173de9ce96410dff44885.jpg" alt="" />
           </a>
         </div>
       </div>
     </footer>
+
+    <script src="./js_search.js"></script>
   </body>
 </html>

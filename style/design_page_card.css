@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* main > .main-buttom > .main-title > .div_card{
+    width: 700px ;
+} */
+main > .main-buttom > .main-title > .div_card > .control_card > .card-page{
+    width: 350px;
+}
+main > .main-buttom > .main-title > .div_card > .control_card > .card-page > .img > img {
+    width: 350px;
+    border-radius: 13px;
+    transition: all .2s ease-in-out;
+}
+main > .main-buttom > .main-title > .div_card > .control_card > .card-page:hover > .img > img{
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all .2s ease-in-out;
+}
+
+main > .main-buttom > .main-title > .div_card > .control_card > .card-page > .title{
+    padding-top: 15px;
+}
+main > .main-buttom > .main-title > .div_card > .control_card > .card-page > .title > a{
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(73, 191, 255);
+}
+
+main > .main-buttom > .main-title > .div_card > .control_card > .card-page:hover > .title > a{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: underline;
+}
+
+main > .main-buttom > .main-title > .div_card > .control_card > .card-page > .title > p {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+main > .main-buttom > .main-title > .div_card > .control_card{
+    margin-top: 60px;
+    display: flex;
+    gap: 47px;
+}

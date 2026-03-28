@@ -1,0 +1,79 @@
+/* Search item wrapper */
+.search-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.search-item{
+    color: #fff;
+    font-family: sans-serif;
+}
+
+/* Remove all default button styling */
+.search-btn {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+/* Search Input - Hidden by default */
+.search-input {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 10px;
+  width: 0;
+  padding: 0;
+  border: 2px solid transparent;   /* single clean border declaration */
+  border-radius: 20px;
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  opacity: 0;
+  transition: width 0.3s ease, padding 0.3s ease, opacity 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+  pointer-events: none;             /* disabled when hidden */
+  outline: none;
+  overflow: hidden;
+  /* NO visibility:hidden — we use opacity + pointer-events instead */
+  /* visibility:hidden delays pointer-events and blocks focus */
+}
+
+/* Search Input - Active/Visible state */
+.search-input.active {
+  width: 250px;
+  padding: 12px 15px;
+  opacity: 1;
+  border-color: #0066b3;
+  pointer-events: auto;             /* enabled when visible */
+}
+
+/* Overlay when search is active */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.search-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
